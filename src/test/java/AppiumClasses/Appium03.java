@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Appium01 {
+public class Appium03 {
 
     @Test
-    public void test() throws MalformedURLException {
+    public void test() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
 //  capabilities.setCapability("platformName","Android"); --> Bu şekilde de yazımı var
@@ -25,6 +25,8 @@ public class Appium01 {
 
         capabilities.setCapability("appPackage","com.davemac327.gesture.tool");
         capabilities.setCapability("appActivity","com.davemac327.gesture.tool.GestureBuilderActivity");
+
+        capabilities.setCapability("noReset",true);// Eğer aplikasyonun izinler atlayarak ana sayfada açılmasını istiyorsak kullanılır
 
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 

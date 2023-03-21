@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Appium01 {
+public class Appium02 {
 
     @Test
-    public void test() throws MalformedURLException {
+    public void test() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
 //  capabilities.setCapability("platformName","Android"); --> Bu şekilde de yazımı var
@@ -27,6 +27,9 @@ public class Appium01 {
         capabilities.setCapability("appActivity","com.davemac327.gesture.tool.GestureBuilderActivity");
 
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-
+        Thread.sleep(3000);
+        driver.findElementById("com.android.permissioncontroller:id/continue_button").click();
+        Thread.sleep(3000);
+        driver.findElementByXPath("//android.widget.Button[@text='OK']").click();
     }
 }

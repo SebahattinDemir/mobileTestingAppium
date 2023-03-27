@@ -30,7 +30,5 @@ public class Appium07 {
 
         driver.findElementByAndroidUIAutomator("UiSelector().resourceId(\"com.davemac327.gesture.tool:id/addButton\")").click();
 
-
-
     }
 }

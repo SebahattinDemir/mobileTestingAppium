@@ -77,6 +77,20 @@ public class Appium08 {
         //        Thread.sleep(10000);
         //        //session kapat
         //        driver.closeApp();
+        ///Thread.sleep(2000);
+        //        //        //WiFi settings butonuna tıkla
+        //        //        driver.findElementByXPath("//android.widget.TextView[@text='WiFi settings']").click();
+        //        //        Thread.sleep(3000);
+        //        //        //Text penceresinin açıldığını doğrula
+        //        //        Assert.assertTrue(driver.findElementById("android:id/alertTitle").isDisplayed());
+        //        //        Thread.sleep(3000);
+        //        //        //Text yazdır
+        //        //        driver.findElementById("android:id/edit").sendKeys("TextAppium");
+        //        //        //ok butonuna tıkla
+        //        //        driver.findElementById("android:id/button1").click();
+        //        //        Thread.sleep(10000);
+        //        //        //session kapat
+        //        //        driver.closeApp();
 
     }
 }

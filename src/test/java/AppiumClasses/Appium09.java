@@ -12,20 +12,7 @@ public class Appium09 extends BaseClass {
 
     @Test
     public void test() throws MalformedURLException, InterruptedException {
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//
-//        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-//        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
-//        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice"); // Android de fark etmiyor böyle de yazılabilirveya cmd --> adb devices yazdığında gelen değeri de yazabilirsin
-//        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-//        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\sdemi\\IdeaProjects\\mobileTesting\\src\\Apps\\API Demos for Android_1.9.0_Apkpure.apk");
-//
-////        capabilities.setCapability("appPackage","com.davemac327.gesture.tool");
-////        capabilities.setCapability("appActivity","com.davemac327.gesture.tool.GestureBuilderActivity");
-//
-//        capabilities.setCapability("noReset",true);// Eğer aplikasyonun izinler atlayarak ana sayfada açılmasını istiyorsak kullanılır
-//
-//        AndroidDriver<MobileElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+
 
         AndroidDriver driver = getAndroidDriver();
         //API Demos seçeneğine tıkla
